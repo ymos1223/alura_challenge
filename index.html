@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador y Desencriptador de Texto</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+            <h1 class="logo"><img src="img/logo.png" class="logo-img"></h1>
+        <h1 class="titulo">Encriptador/Desencriptador de Texto</h1>
+       
+    </header>       
+    <div class="contenedor">
+    <div class="caja-izquierda">
+        
+        <div class="texto" id="entrada">
+            <textarea class="textarea" id="textarea" name="textarea" placeholder="Ingrese el texto aqui" autofocus></textarea>
+            <div class="advertencia">
+                <div class="icono">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                  </svg>
+                </div>
+                <div class="minusculas">
+                     <h2>Solo minúsculas, sin acentos ni carácteres especiales.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="botones">
+                <button type="button" id="encrip" class="btn verde" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="desencrip" class="btn rojo" onclick="desencriptar()">Desencriptar</button>
+                <button type="button" class="btn naranja" onclick="location.reload()">Limpiar</button>
+                </div>
+            </div>
+
+    <div class="caja-derecha" id="caja-derecha">
+        <div class="txt-encrip" id="txt-encrip"> 
+            <h2 id="enc-des"></h2>
+        </div>
+        <img
+          id="imagen-derecha"
+          src="img/robot.png"
+          alt="Imagen de un robot">
+        <div class="text" id="text-error">
+        <h2>Ningún mensaje fue encontrado</h2>
+        </div>
+       <textarea id="ingresa-texto" name="ingresa-texto" rows="8" cols="80" class="ingresa-texto" placeholder="Ingresa el texto que desees encriptar o desencriptar." readonly></textarea>
+       <div>
+       <button type="button" class="btn azul" name="button" id="copy" onclick="copy()">Copiar</button>
+      </div>
+
+   </div> 
+   </div>
+   <footer>
+    <p class="copyright">&copy Copyright Encriptador-Desencriptador - 2022</p>
+</footer>
+<script src="js/sweetalert2.all.js"></script>
+<script src="js/alertas.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
