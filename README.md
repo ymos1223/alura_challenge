@@ -1,4 +1,3 @@
-# alura_challenge
 <h1 align="center">Encriptador de Texto | Challenge ONE - Oracle Next Education</h1>
 
 <p align="left"> Este es el primer Challenge del programa ONE - Oracle Next Education, donde se nos solicitó hacer un encriptador de texto, donde se podrá intercambiar mensajes secretos con otras personas.</p>
